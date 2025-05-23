@@ -1,6 +1,7 @@
 ###### AUTH LOGIC (auth.py) ######
-
+# import statements
 from __imports__ import bcr
+# this is where user credentials will be saved.
 import csv
 import os
 # Define the CSV file path (in the same directory as auth.py)
@@ -75,12 +76,13 @@ init_default_users()
 
 
 ###### LOGIN LOGIC (login.py) #######
-
+# imports
 # login.py
 from __imports__ import CTk, bcr
 import auth
 import ui
-# from gui import run_main_app
+# uncomment line 84 when a front end gui has been configured, and edit as needed.
+# from gui import run_main_app 
 
 # configure window
 CTk.set_appearance_mode("Dark")
